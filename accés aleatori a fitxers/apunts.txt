@@ -1,0 +1,26 @@
+necessitat d'accedir a un arxiu de manera aleatoria, 
+en canvi d'anar registre a registre es pot accedir a la direccio de memoria d'un element en especific
+pista i sector del disc on estroba allo que jo desitjo modificar o eliminar
+
+La classe amb la que es treballa es:
+    RandomAccessFile
+
+constructors:
+    RandomAccessFile (String nomFitxer, String modeAccess)nomFitxer on el nom es el pah
+    RandomAccessFile (File objectFile, String modeAccess)objecte File
+
+    el parametre pot ser "r" nomes de lectura o "rw" lectura i escriptura
+
+Per tractar el fitxer farem servir els metodes DataInputStream i DataOutputStream,  readUTF/writeUTF, readInt/writeInt, etc
+writeChars per assegurarse de les posicions 
+Els metodes mes importants serien:
+    long getFilePointer()
+    (per no generar una excepcio)
+    void seek (long posicio)
+    (permet arribar a un registre sense passar per altres)
+    void length
+
+    int skipBytes
+    (per saltar-nos posicions, per anar avancant, necesita que les posicions siguin les mateixes)
+
+Si el creas de manera aleatoria l'has de tractar de manera aleatoria, en canvi si el creas de manera seqüencial l'has de tractar de manera seqüencial

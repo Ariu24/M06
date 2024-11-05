@@ -1,0 +1,14 @@
+fitxers de text:
+perque jo l'obro y puc identificar tots els caracters dintre d'aquest fitxer
+-   es poden obrir amb un editor de text
+
+fitxers binaris:
+caracters llegibles i caracters que no ho son, poden ser codificats
+estan fets per ser obrits en programari especific, oer exemple un .pdf, o .docx
+UTILITZAR EL PROGRAMA ADECUAT PER PODER-LO PROCESSAR
+
+el .read() retorna un enter, per lo tant quan retorna un -1 significa que ha arribat al final, a cada numero l'ha de convertir a text
+els fluxos poden ser d'entrada i de sortida
+
+ - flux de byte (byteStream)
+    

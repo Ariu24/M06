@@ -1,0 +1,12 @@
+proces en el que es codifica un objecta per enviar-lo a qualsevol dispositiu per la xarxa
+L'agafa tot l'objecte, es converteix en binari i s'envia a l'altre dispositiu, l'altre agafa els bits i ja ho fa
+----------------------------------------------------------------------------- | ---------------------------------
+                            Serialització                                           desserialitzacio
+JSON i XML son exemples de serialitzar dades
+
+POJO--> Plain Old Java Object
+
+ObjectOutputStream
+FileOutputStream
+
+writeObject(object o)

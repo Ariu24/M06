@@ -1,0 +1,10 @@
+XML
+analitzar arxius xml amb java
+XML: avantatje compatibilita, facilitat de lectura, tota la informacio està en format de text
+com poder tractar els documents xml (analitzadors):
+DOM () :agafa i carrega tot el contingut en memoria i realitza el tractament, treballa de forma jerarquic (pares, fills, ...), 
+    - problema: ocupa gran quantitat de recursos
+    
+SAX (Simple Api for XML):fa la lectura i access de manera sequencial, el carrega segons el va llegint, el tractament també es línea a línea
+    - és més eficient, ja que ocupa la memoria que realment necessita, va bé per tractar arxius de BIG DATA
+    - és més senzill i intuitiu
