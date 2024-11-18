@@ -14,13 +14,12 @@ constructors:
 Per tractar el fitxer farem servir els metodes DataInputStream i DataOutputStream,  readUTF/writeUTF, readInt/writeInt, etc
 writeChars per assegurarse de les posicions 
 Els metodes mes importants serien:
-    long getFilePointer()
+    long getFilePointer() //retorna la posicio actual del punter
     (per no generar una excepcio)
-    void seek (long posicio)
-    (permet arribar a un registre sense passar per altres)
-    void length
-
+    void seek (long posicio) //coloca el punter a una posicio determinada
+    void length() retorna la mida del fitxer en bytes. Posició length marca el final del fitxer
     int skipBytes
+    //desplaça el punter des de la posicio actual el nombre de bytes indicats
     (per saltar-nos posicions, per anar avancant, necesita que les posicions siguin les mateixes)
 
 Si el creas de manera aleatoria l'has de tractar de manera aleatoria, en canvi si el creas de manera seqüencial l'has de tractar de manera seqüencial

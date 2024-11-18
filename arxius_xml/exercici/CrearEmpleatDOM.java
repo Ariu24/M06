@@ -53,7 +53,7 @@ public class CrearEmpleatDOM {
             System.out.println("Error: " + e.getMessage());
         }   
     }
-    // Helper method to create XML elements with a value
+    //crea els elements XML
     public static void createElement(String elementName, String value, Element parent, Document document) {
         Element element = document.createElement(elementName);
         Text textNode = document.createTextNode(value);

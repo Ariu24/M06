@@ -27,7 +27,6 @@ public class CrearEmpleatDOM {
             DOMImplementation implementation = builder.getDOMImplementation();
             Document document = implementation.createDocument (null,"empleats", null);
             document.setXmlVersion("1.0");
-       
             for ( ; ;){
                 file.seek(posicio);
                 id = file.readInt();

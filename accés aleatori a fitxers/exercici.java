@@ -49,12 +49,13 @@ public class exercici {
                     String resposta = reader.readLine();
                     if(resposta.equals("s")){
                         System.out.println("Introdueix el nou numero de departament");
-                        int nouDepartament = Integer.parseInt(reader.readLine());
-                        raf1.writeInt(nouDepartament);
-                        salari = raf1.readDouble();
+                        departament = Integer.parseInt(reader.readLine());
+                        raf1.writeInt(departament);
+                        raf1.writeDouble(salari);
+                        //salari = raf1.readDouble();
                     }else{
-                        departament = raf1.readInt();
-                        salari = raf1.readDouble();
+                        raf1.writeInt(departament);
+                        raf1.writeDouble(salari);
                     }
                     
                     System.out.printf("Nom empleat: %s, Departament: %d, Salari: %.2f %n",
