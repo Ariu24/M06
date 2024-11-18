@@ -1,0 +1,3 @@
+sax només permet llegir xml no crear-los
+sax examen:
+    
