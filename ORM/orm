@@ -1,0 +1,40 @@
+ORM
+
+JPA-> Java Persistence API
+
+eina que mapeja clases en entitats relacionals 
+es solventa el desfasament amb els ORM's
+
+JAVA HIBERNATE
+framework que utilitza JPA (es basa en aquesta especificacio)
+
+independitzar la capa de negoci (logica de negoci) de la capa d'acces a dades
+les regles i les validacions en una clase i la manera en la que yo accedeixo a les dades d'una altre manera
+el orm funciona igualment independentment del SGDB utilitzat
+llenguatge propi per fer les consultes
+reutilització, escalabilitat i portabilitat del codi
+
+HIBERNATE
+declara les relacions mitjançant dos mecanismes:
+ fitxers declaratius XML
+ anotacions a les classes java (javabeans per ser més exactes)
+
+no deixar que l'hibernate mapegi les classes
+
+el primer estat que te un objecte es Transient, esta "flotant" es a dir no esta persistit en cap lloc,
+el següent estat que pot tenir es Persistent, això vol dir que l'objecte estara guardat en algun lloc de la bdd
+això es fa amb persist() i merge()
+una vegada esta persistit por ser Removed o Detached (ex error l'objecte no esta en un estat persistent )-> per tant passen a removed
+TOT OBJECTE PERSISTIT POR SER ESBORRAT
+
+<!-- PREGUNTA EXAMEN  opciones de hbm2dll:
+        create : Borra y crea SIEMPRE la base de datos
+        update : Mantiene los datos, actualizando la estructura de la BBDD. 
+        create-drop : Crea todo, y al finalizar el programa lo borra
+        validate: comprueba que las especificaciones del mapeo son validas con el diseño relacional de la BBDD
+
+
+todo POJO té:
+implementar serialitzar
+tots els atrivuts s'han de declarar com a privats, per fer una encapsulacío
+GETTERS I SETTERS

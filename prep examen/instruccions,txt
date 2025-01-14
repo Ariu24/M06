@@ -1,0 +1,18 @@
+escriure aleatori:
+    RandomAccessFile arx1 = new RandomAccessFile("path" , "rw");
+    StringBuffer per escriure al document
+    escriure la informació amb StringBuffer i se li assigna un setLength perque sempre 
+    tingui la mateixa longitud
+    ex:
+        sbf = new StringBuffer(nomsEmpleats[i]);
+    //Longitud de caràcters màxima
+        sbf.setLength(20);
+    //No escrivim amb UTF i si caràcter a caràcter per assegurar 
+    //que escrivim 2 by per posició.
+        raf1.writeChars(sbf.toString());
+
+
+llegirAleatori:
+    RandomAccessFile arx1 = new RandomAccessFile("path" , "rw");
+    creació de variables per guardar la informació que llegim 
+    

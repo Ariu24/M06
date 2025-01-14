@@ -24,7 +24,6 @@ public class LlegirEmpleatDOM {
                 for (int i = 0; i < empleats.getLength(); i++) {
                     Node emple = empleats.item(i);
                     if (emple.getNodeType() == Node.ELEMENT_NODE){
-                        
                         Element element = (Element) emple;
                         //imprimeix el id, amb el getAttribute ja que hem assignat el ID com atribut a l'etiqueta del empleat
                         System.out.printf("Id = %s %n", element.getAttribute("id"));

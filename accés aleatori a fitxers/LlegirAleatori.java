@@ -24,7 +24,7 @@ public class LlegirAleatori {
         while(raf1.getFilePointer() != raf1.length()){
             
             //ens posicionem d'acord al valor de la variable posició
-            //raf1.seek(posicio);
+            raf1.seek(posicio);
 
             //iterem caràcter a caràcter i els anem ficant a nomEmpleat
             for (int i=0;i<nomEmpleat.length;i++) {
@@ -43,7 +43,7 @@ public class LlegirAleatori {
                 nomCompletEmpleat.trim(),departament,salari);
 
                 //reposicionem per anar al següent registre
-                //posicio = posicio + 52;
+                posicio = posicio + 52;
             }
         }
         raf1.close();

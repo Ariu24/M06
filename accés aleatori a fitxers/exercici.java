@@ -24,7 +24,7 @@ public class exercici {
         char nomEmpleat[] = new char[20];
         int departament;
         double salari;
-
+        boolean trobat = false;
         //condició d'iteració: fins a la longitud màxima de fitxer
         while(raf1.getFilePointer() != raf1.length()){
             
@@ -41,7 +41,7 @@ public class exercici {
             String nomCompletEmpleat = new String(nomEmpleat);
             departament = raf1.readInt();
             salari = raf1.readDouble();
-
+            
             //Si el fitxer no està buit i s'ha llegit informació, fem el printf
             if ((!(nomCompletEmpleat.isEmpty()))) {
                 if(nomCompletEmpleat.toLowerCase().contains(nom)){
@@ -52,7 +52,6 @@ public class exercici {
                         departament = Integer.parseInt(reader.readLine());
                         raf1.writeInt(departament);
                         raf1.writeDouble(salari);
-                        //salari = raf1.readDouble();
                     }else{
                         raf1.writeInt(departament);
                         raf1.writeDouble(salari);
