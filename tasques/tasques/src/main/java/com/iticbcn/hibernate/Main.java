@@ -18,8 +18,35 @@ public class Main
         System.out.println("Hola desde Hibernate");
         //un commit per assegurar l'accio 
         session.getTransaction().commit();
+//
+        //session.close();
 
-        session.close();
+        //consultar amb el getreference
+        //SessionFactory sesion = HibernateUtil.getSessionFactory();
+//
+        //Session session = sesion.openSession();
+//
+        //tasks t1 = new tasks();
+//
+        //t1 = (tasks) session.getReference(tasks.class, "2");
+//
+        //System.out.println(t1.toString());
+//
+        //session.close();
+
+//consultar amb el find
+        //SessionFactory sesion = HibernateUtil.getSessionFactory();
+//
+        //Session session = sesion.openSession();
+//
+        //tasks t1 = new tasks();
+//
+        //t1 = session.find(tasks.class, "2");
+//
+        //System.out.println(t1.toString());
+//
+        //session.close();
+
 
     }
 }

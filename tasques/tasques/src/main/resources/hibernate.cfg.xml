@@ -35,7 +35,7 @@
 
         <!-- Mantenimiento de la BBDD -->
 
-        <property name="hbm2ddl.auto">none</property>
+        <property name="hbm2ddl.auto">update</property>
 
         <!-- PREGUNTA EXAMEN  opciones de hbm2dll:
         create : Borra y crea SIEMPRE la base de datos
@@ -45,9 +45,10 @@
         -->
 
         <!-- Ficheros de mapeo. Pueden combinarse-->
-        <mapping resource="tasks.hbm.xml"/>
+        <!--<mapping resource="tasks.hbm.xml"/>-->
 
         <!-- Mapeo DENTRO DE LA CLASE -->
+        <mapping class="com.iticbcn.hibernate.model.empleats"/>
         
     </session-factory>
 </hibernate-configuration>

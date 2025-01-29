@@ -52,6 +52,6 @@ public class tasks implements Serializable{
     public String toString() {
         return "tasks [idTask=" + idTask + ", descTask=" + descTask 
         + ", numHours=" + numHours + ", finalitzada=" + finalitzada + "]";
-    }
+    } 
 
 }
